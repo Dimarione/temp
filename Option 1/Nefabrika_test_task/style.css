@@ -1,0 +1,183 @@
+@font-face {
+    src: url(https://fonts.googleapis.com/css?family=PT+Sans&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+}
+
+.container {
+    width: 980px;
+    max-width: 980px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.page-header {
+    background-color: #ccc;
+}
+
+.page-header-content {
+    padding: 60px 0;
+}
+
+.contacts {
+    font: 40px 'Open Sans', sans-serif;
+    color: #767676;
+    line-height: 50px;
+    text-align: right;
+}
+
+.page-nav {
+    background: #767676;
+}
+
+.slider {
+    margin-bottom: 25px;
+}
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu ul {
+    height: 80px;
+    background: #767676;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+}
+
+.main-menu li {
+    display: inline-block;
+    line-height: 75px;
+    vertical-align: middle;
+}
+
+.main-menu li::after {
+    content: "\007C";
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.main-menu li:last-child::after {
+    content: "";
+    margin: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    font-family: 'PT sans', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+
+}
+
+.content {
+    padding-bottom: 190px;
+}
+
+.content-news {
+    padding: 20px 60px 90px 34px;
+    background: #777777;
+
+}
+
+.content-news h1 {
+    font-family: 'PT sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content-news p {
+    font-family: 'PT sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.news-item-date {
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.news-link {
+    margin-left: 130px;
+    font-family: 'PT sans', sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.content-about {
+    padding: 20px 5px 0 60px;
+    color: #767676;
+
+}
+
+.content-about h1 {
+    font-family: 'PT sans', sans-serif;
+    font-size: 40px;
+}
+
+.content-about p {
+    padding: 10px 0;
+    font-family: 'PT sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.page-footer {
+    background: #767676;
+    padding: 50px 0;
+}
+
+.footer-info {
+    padding: 0 60px 0 0;
+    font-family: 'PT sans', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-menu {
+    padding-left: 0;
+}
+
+.footer-menu li {
+    /*margin-bottom: 10px;*/
+    line-height: 22px;
+}
+
+.footer-menu a {
+    font-family: 'PT sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.footer-about {
+
+}
+
+.footer-about p, .footer-about a {
+    font-family: 'PT sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.footer-about a {
+    text-decoration: underline;
+}
+

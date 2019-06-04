@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Test project</title>
+	<link rel="stylesheet"
+	      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	      crossorigin="anonymous">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-slider.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="page-header">
+	<div class="container page-header-content">
+		<div class="row justify-content-between">
+			<div class="col logo">
+				<img class="logo-image" src="image/logo.png" width="273" height="100" alt="logo">
+			</div>
+			<div class="col contacts">
+				<span>+7(499) 777-77-77<br> +7(499) 777-77-77</span>
+				<a href="#">Обратная связь</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="page-nav">
+	<div class="container main-menu">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Доставка и оплата</a></li>
+			<li><a href="#">Прайс-лист</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="slider">
+	<div id="carousel" class="carousel">
+
+		<div class="gallery">
+			<div class="arrow prev"><img src="image/arrow-left.png" alt=""></div>
+			<ul class="images">
+				<li><img src="image/slide-1.png"></li>
+				<li><img src="image/slide-2.png"></li>
+			</ul>
+			<div class="arrow next"><img src="image/arrow-right.png" alt=""></div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="container content">
+	<div class="row">
+	<div class="content__page-address">
+		<ul class="">
+
+		</ul>
+	</div>
+	</div>
+	<div class="row">
+		<div class="content__left-block"></div>
+	</div>
+	<div class="content__center-block"></div>
+</div>
+
+<footer class="page-footer">
+	<div class="container page-footer-content">
+		<div class="row">
+			<div class="col-4 footer-info">
+				<p>© 2014–2019 ЗАО «Компания» info@name.ru</p>
+			</div>
+			<div class="col-4 footer-menu">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Прайс-Лист</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="col-3 offset-1 footer-about">
+				<p><a href="#">Разработка сайта</a> —  IT-компания «Нефабрика»</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script>
+	var width = 1248;
+	var count = 1;
+
+	var carousel = document.getElementById('carousel');
+	var list = carousel.querySelector('ul');
+	var listElems = carousel.querySelectorAll('li');
+
+	var position = 0;
+
+	carousel.querySelector('.prev').onclick = function() {
+		position = Math.min(position + width * count, 0)
+		list.style.marginLeft = position + 'px';
+	};
+
+	carousel.querySelector('.next').onclick = function() {
+		position = Math.max(position - width * count, -width * (listElems.length - count));
+		list.style.marginLeft = position + 'px';
+	};
+</script>
+</body>
+</html>
